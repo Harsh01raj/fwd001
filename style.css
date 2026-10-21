@@ -1,0 +1,196 @@
+/* Basic page settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f5f8fc;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #173f5f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main welcome section */
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background-color: #e8f3f8;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #173f5f;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background-color: #1f7a8c;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: #173f5f;
+    border: 2px solid #173f5f;
+}
+
+/* Services section */
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #173f5f;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #173f5f;
+}
+
+.card p {
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.card-link {
+    color: #1f7a8c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Complaint section */
+.complaint-section {
+    padding: 60px 8%;
+}
+
+.complaint-box {
+    background-color: #173f5f;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 12px;
+}
+
+.complaint-box h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.complaint-box p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #102f46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Simple mobile adjustment */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
